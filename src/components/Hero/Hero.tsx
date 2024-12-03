@@ -1,17 +1,15 @@
-import { LiaLinkedinIn } from "react-icons/lia";
 import HeroGif from "../../assets/images/hero-gif.gif";
 import logoWhite from "../../assets/images/logo-white.png";
 import { ArrowDownIcon } from "@heroicons/react/24/outline";
-import { CiLinkedin } from "react-icons/ci";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
-import { FaMailBulk } from "react-icons/fa";
+import { EnvelopeIcon } from "@heroicons/react/24/solid";
 import { Link } from "react-router-dom";
 
 const links = [
   { Icon: FaLinkedinIn, href: "https://www.linkedin.com" },
   { Icon: FaInstagram, href: "https://www.instagram.com" },
-  { Icon: FaMailBulk, href: "mailto:example@example.com" },
+  { Icon: EnvelopeIcon, href: "mailto:example@example.com" },
 ];
 
 export default function Hero() {
@@ -33,7 +31,7 @@ export default function Hero() {
             <Link
               key={index}
               to={href}
-              className="text-red-500 p-3 bg-white flex justify-center items-center rounded-full"
+              className="text-red-500 p-3 bg-white flex justify-center items-center rounded-full hover:bg-gray-200"
             >
               <Icon className="w-4 h-4" />
             </Link>
